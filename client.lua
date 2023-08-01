@@ -1,4 +1,4 @@
-HPRPCMenu.CreateMenu("ClothingMenu", "Police Uniforms")
+HPRPCMenu.CreateMenu("ClothingMenu", "Uniforms")
 HPRPCMenu.SetSubTitle("ClothingMenu", "Select an outfit")
 
 function requestAcesForList()
@@ -332,7 +332,7 @@ Citizen.CreateThread(function()
                 if #(v.coords - ourCoords) <= interactDistance then
                     sleep = 0
 DisplayNotification('~w~Press ~r~E~w~ to open the locker!', true) -- change the text here to whatever you want
-                    DrawText3Ds(v.coords, 'BSRP Locker')
+                    DrawText3Ds(v.coords, 'Locker')
 
                     if IsControlJustReleased(0, 38) then
                         openMenu()
